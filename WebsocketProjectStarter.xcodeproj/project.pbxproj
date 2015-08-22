@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12D0A3DDD242A2C283C430E2 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1366FD8FCDA521B3ACAF10CF /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		2C441E1E1B86EB98005EAAA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C441E1D1B86EB98005EAAA0 /* AppDelegate.swift */; };
+		2C441E201B86EB98005EAAA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C441E1F1B86EB98005EAAA0 /* ViewController.swift */; };
+		2C441E231B86EB98005EAAA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C441E211B86EB98005EAAA0 /* Main.storyboard */; };
+		2C441E281B86EB98005EAAA0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C441E261B86EB98005EAAA0 /* LaunchScreen.xib */; };
+		2C441E341B86EB98005EAAA0 /* WebsocketProjectStarterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C441E331B86EB98005EAAA0 /* WebsocketProjectStarterTests.swift */; };
+		2C441E641B871773005EAAA0 /* APIDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C441E5B1B871773005EAAA0 /* APIDefine.swift */; };
+		2C441E651B871773005EAAA0 /* LogDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C441E5C1B871773005EAAA0 /* LogDefine.swift */; };
+		2C441E661B871773005EAAA0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C441E5E1B871773005EAAA0 /* Images.xcassets */; };
+		2C441E6C1B871C0B005EAAA0 /* StringExtend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C441E6B1B871C0B005EAAA0 /* StringExtend.swift */; };
+		2C441E6E1B8722BB005EAAA0 /* jsonPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C441E6D1B8722BB005EAAA0 /* jsonPattern.swift */; };
+		2C441E701B8895FD005EAAA0 /* WSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C441E6F1B8895FD005EAAA0 /* WSError.swift */; };
+		B1B8A0B056E451E0B0EF86D3 /* JReq.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B8A9A880F514139896D218 /* JReq.swift */; };
+		B1B8A55AAC7C46BA9EED543D /* ArrayExtend.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B8A5EFA4774FD65AE43CBB /* ArrayExtend.swift */; };
+		B1B8A8E34E5795C16153B76F /* WebsocketWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B8A71541955817F597E457 /* WebsocketWrapper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2C441E2E1B86EB98005EAAA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C441E101B86EB98005EAAA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C441E171B86EB98005EAAA0;
+			remoteInfo = WebsocketProjectStarter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1366FD8FCDA521B3ACAF10CF /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C441E181B86EB98005EAAA0 /* WebsocketProjectStarter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebsocketProjectStarter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C441E1C1B86EB98005EAAA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C441E1D1B86EB98005EAAA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2C441E1F1B86EB98005EAAA0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2C441E221B86EB98005EAAA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2C441E271B86EB98005EAAA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		2C441E2D1B86EB98005EAAA0 /* WebsocketProjectStarterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebsocketProjectStarterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C441E321B86EB98005EAAA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C441E331B86EB98005EAAA0 /* WebsocketProjectStarterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebsocketProjectStarterTests.swift; sourceTree = "<group>"; };
+		2C441E5B1B871773005EAAA0 /* APIDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIDefine.swift; sourceTree = "<group>"; };
+		2C441E5C1B871773005EAAA0 /* LogDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogDefine.swift; sourceTree = "<group>"; };
+		2C441E5E1B871773005EAAA0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2C441E6B1B871C0B005EAAA0 /* StringExtend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtend.swift; sourceTree = "<group>"; };
+		2C441E6D1B8722BB005EAAA0 /* jsonPattern.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = jsonPattern.swift; sourceTree = "<group>"; };
+		2C441E6F1B8895FD005EAAA0 /* WSError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSError.swift; sourceTree = "<group>"; };
+		B1B8A5EFA4774FD65AE43CBB /* ArrayExtend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtend.swift; sourceTree = "<group>"; };
+		B1B8A71541955817F597E457 /* WebsocketWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebsocketWrapper.swift; sourceTree = "<group>"; };
+		B1B8A9A880F514139896D218 /* JReq.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JReq.swift; sourceTree = "<group>"; };
+		F00C7E210C2E54C0668D62F1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		FBF22513AF500AE0E1C25D84 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C441E151B86EB98005EAAA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12D0A3DDD242A2C283C430E2 /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C441E2A1B86EB98005EAAA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		298DF9276A713443F4509075 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F00C7E210C2E54C0668D62F1 /* Pods.debug.xcconfig */,
+				FBF22513AF500AE0E1C25D84 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2C441E0F1B86EB98005EAAA0 = {
+			isa = PBXGroup;
+			children = (
+				2C441E6A1B871BBC005EAAA0 /* lang */,
+				2C441E1A1B86EB98005EAAA0 /* WebsocketProjectStarter */,
+				2C441E301B86EB98005EAAA0 /* WebsocketProjectStarterTests */,
+				2C441E191B86EB98005EAAA0 /* Products */,
+				298DF9276A713443F4509075 /* Pods */,
+				2F43550E6D8928E851D1F0B8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2C441E191B86EB98005EAAA0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C441E181B86EB98005EAAA0 /* WebsocketProjectStarter.app */,
+				2C441E2D1B86EB98005EAAA0 /* WebsocketProjectStarterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C441E1A1B86EB98005EAAA0 /* WebsocketProjectStarter */ = {
+			isa = PBXGroup;
+			children = (
+				2C441E581B871773005EAAA0 /* API */,
+				2C441E591B871773005EAAA0 /* Controllers */,
+				2C441E5A1B871773005EAAA0 /* Define */,
+				2C441E5D1B871773005EAAA0 /* Images */,
+				2C441E5F1B871773005EAAA0 /* Resources */,
+				2C441E611B871773005EAAA0 /* Utils */,
+				2C441E1D1B86EB98005EAAA0 /* AppDelegate.swift */,
+				2C441E1F1B86EB98005EAAA0 /* ViewController.swift */,
+				2C441E211B86EB98005EAAA0 /* Main.storyboard */,
+				2C441E261B86EB98005EAAA0 /* LaunchScreen.xib */,
+				2C441E1B1B86EB98005EAAA0 /* Supporting Files */,
+			);
+			path = WebsocketProjectStarter;
+			sourceTree = "<group>";
+		};
+		2C441E1B1B86EB98005EAAA0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C441E1C1B86EB98005EAAA0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2C441E301B86EB98005EAAA0 /* WebsocketProjectStarterTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C441E331B86EB98005EAAA0 /* WebsocketProjectStarterTests.swift */,
+				2C441E311B86EB98005EAAA0 /* Supporting Files */,
+			);
+			path = WebsocketProjectStarterTests;
+			sourceTree = "<group>";
+		};
+		2C441E311B86EB98005EAAA0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C441E321B86EB98005EAAA0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2C441E581B871773005EAAA0 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		2C441E591B871773005EAAA0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2C441E5A1B871773005EAAA0 /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				2C441E5B1B871773005EAAA0 /* APIDefine.swift */,
+				2C441E5C1B871773005EAAA0 /* LogDefine.swift */,
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		2C441E5D1B871773005EAAA0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2C441E5E1B871773005EAAA0 /* Images.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		2C441E5F1B871773005EAAA0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2C441E601B871773005EAAA0 /* Xib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2C441E601B871773005EAAA0 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
+		2C441E611B871773005EAAA0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2C441E621B871773005EAAA0 /* promise_websocket */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2C441E621B871773005EAAA0 /* promise_websocket */ = {
+			isa = PBXGroup;
+			children = (
+				2C441E6D1B8722BB005EAAA0 /* jsonPattern.swift */,
+				B1B8A71541955817F597E457 /* WebsocketWrapper.swift */,
+				B1B8A9A880F514139896D218 /* JReq.swift */,
+				2C441E6F1B8895FD005EAAA0 /* WSError.swift */,
+			);
+			path = promise_websocket;
+			sourceTree = "<group>";
+		};
+		2C441E6A1B871BBC005EAAA0 /* lang */ = {
+			isa = PBXGroup;
+			children = (
+				2C441E6B1B871C0B005EAAA0 /* StringExtend.swift */,
+				B1B8A5EFA4774FD65AE43CBB /* ArrayExtend.swift */,
+			);
+			path = lang;
+			sourceTree = "<group>";
+		};
+		2F43550E6D8928E851D1F0B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1366FD8FCDA521B3ACAF10CF /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C441E171B86EB98005EAAA0 /* WebsocketProjectStarter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C441E371B86EB98005EAAA0 /* Build configuration list for PBXNativeTarget "WebsocketProjectStarter" */;
+			buildPhases = (
+				DE7D53058163CFF36CD7BBAE /* Check Pods Manifest.lock */,
+				2C441E141B86EB98005EAAA0 /* Sources */,
+				2C441E151B86EB98005EAAA0 /* Frameworks */,
+				2C441E161B86EB98005EAAA0 /* Resources */,
+				4DA4634FF4EE259400E44292 /* Embed Pods Frameworks */,
+				0068BDF3DCDCADE06B0BD56B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WebsocketProjectStarter;
+			productName = WebsocketProjectStarter;
+			productReference = 2C441E181B86EB98005EAAA0 /* WebsocketProjectStarter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2C441E2C1B86EB98005EAAA0 /* WebsocketProjectStarterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C441E3A1B86EB98005EAAA0 /* Build configuration list for PBXNativeTarget "WebsocketProjectStarterTests" */;
+			buildPhases = (
+				2C441E291B86EB98005EAAA0 /* Sources */,
+				2C441E2A1B86EB98005EAAA0 /* Frameworks */,
+				2C441E2B1B86EB98005EAAA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C441E2F1B86EB98005EAAA0 /* PBXTargetDependency */,
+			);
+			name = WebsocketProjectStarterTests;
+			productName = WebsocketProjectStarterTests;
+			productReference = 2C441E2D1B86EB98005EAAA0 /* WebsocketProjectStarterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C441E101B86EB98005EAAA0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = very.util;
+				TargetAttributes = {
+					2C441E171B86EB98005EAAA0 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					2C441E2C1B86EB98005EAAA0 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 2C441E171B86EB98005EAAA0;
+					};
+				};
+			};
+			buildConfigurationList = 2C441E131B86EB98005EAAA0 /* Build configuration list for PBXProject "WebsocketProjectStarter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C441E0F1B86EB98005EAAA0;
+			productRefGroup = 2C441E191B86EB98005EAAA0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C441E171B86EB98005EAAA0 /* WebsocketProjectStarter */,
+				2C441E2C1B86EB98005EAAA0 /* WebsocketProjectStarterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C441E161B86EB98005EAAA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C441E661B871773005EAAA0 /* Images.xcassets in Resources */,
+				2C441E231B86EB98005EAAA0 /* Main.storyboard in Resources */,
+				2C441E281B86EB98005EAAA0 /* LaunchScreen.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C441E2B1B86EB98005EAAA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0068BDF3DCDCADE06B0BD56B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4DA4634FF4EE259400E44292 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE7D53058163CFF36CD7BBAE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C441E141B86EB98005EAAA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C441E641B871773005EAAA0 /* APIDefine.swift in Sources */,
+				2C441E201B86EB98005EAAA0 /* ViewController.swift in Sources */,
+				2C441E701B8895FD005EAAA0 /* WSError.swift in Sources */,
+				2C441E651B871773005EAAA0 /* LogDefine.swift in Sources */,
+				2C441E6C1B871C0B005EAAA0 /* StringExtend.swift in Sources */,
+				2C441E1E1B86EB98005EAAA0 /* AppDelegate.swift in Sources */,
+				2C441E6E1B8722BB005EAAA0 /* jsonPattern.swift in Sources */,
+				B1B8A8E34E5795C16153B76F /* WebsocketWrapper.swift in Sources */,
+				B1B8A0B056E451E0B0EF86D3 /* JReq.swift in Sources */,
+				B1B8A55AAC7C46BA9EED543D /* ArrayExtend.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C441E291B86EB98005EAAA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C441E341B86EB98005EAAA0 /* WebsocketProjectStarterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C441E2F1B86EB98005EAAA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C441E171B86EB98005EAAA0 /* WebsocketProjectStarter */;
+			targetProxy = 2C441E2E1B86EB98005EAAA0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2C441E211B86EB98005EAAA0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C441E221B86EB98005EAAA0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2C441E261B86EB98005EAAA0 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C441E271B86EB98005EAAA0 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C441E351B86EB98005EAAA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2C441E361B86EB98005EAAA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C441E381B86EB98005EAAA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F00C7E210C2E54C0668D62F1 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WebsocketProjectStarter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DDEBUG -DRELEASE";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2C441E391B86EB98005EAAA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBF22513AF500AE0E1C25D84 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WebsocketProjectStarter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DDEBUG -DRELEASE";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2C441E3B1B86EB98005EAAA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WebsocketProjectStarterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebsocketProjectStarter.app/WebsocketProjectStarter";
+			};
+			name = Debug;
+		};
+		2C441E3C1B86EB98005EAAA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WebsocketProjectStarterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebsocketProjectStarter.app/WebsocketProjectStarter";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C441E131B86EB98005EAAA0 /* Build configuration list for PBXProject "WebsocketProjectStarter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C441E351B86EB98005EAAA0 /* Debug */,
+				2C441E361B86EB98005EAAA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C441E371B86EB98005EAAA0 /* Build configuration list for PBXNativeTarget "WebsocketProjectStarter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C441E381B86EB98005EAAA0 /* Debug */,
+				2C441E391B86EB98005EAAA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C441E3A1B86EB98005EAAA0 /* Build configuration list for PBXNativeTarget "WebsocketProjectStarterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C441E3B1B86EB98005EAAA0 /* Debug */,
+				2C441E3C1B86EB98005EAAA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C441E101B86EB98005EAAA0 /* Project object */;
+}

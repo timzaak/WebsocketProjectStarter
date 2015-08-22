@@ -1,0 +1,25 @@
+PODS:
+  - Box (1.2.2)
+  - BrightFutures (2.0.1):
+    - Result (~> 0.4.3)
+  - Result (0.4.4):
+    - Box (~> 1.2)
+  - Starscream (0.9.4)
+  - SwiftyJSON (2.2.1)
+  - XCGLogger (2.2)
+
+DEPENDENCIES:
+  - BrightFutures (~> 2.0.1)
+  - Starscream (~> 0.9.4)
+  - SwiftyJSON (~> 2.2.1)
+  - XCGLogger (~> 2.2)
+
+SPEC CHECKSUMS:
+  Box: a92e8aa4c099e6bc0733829665caf9e668ef53b8
+  BrightFutures: 27704272a695324b42538a2d85b20ac3f24228bd
+  Result: b44f6bc8762bbffaf2c5df58f2c7d12c3496ced8
+  Starscream: 0ad8f312bb826c3d7610bd842d66528eee34ad81
+  SwiftyJSON: ae2d0a3d68025d136602a33c4ee215091ced3e33
+  XCGLogger: bbfe599d8ccc4c2d0a72ce652eb1f5e6bb28e3d0
+
+COCOAPODS: 0.38.2
