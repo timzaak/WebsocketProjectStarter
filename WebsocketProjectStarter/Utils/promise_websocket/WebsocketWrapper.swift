@@ -33,8 +33,10 @@ class WebsocketWrapper :WebSocketDelegate {
     private var _dic = [String:Promise<JSON,WSReturnError>]()
     
     private var _pubSubDic = [String:[PubFunc]]()
+
     private var needRetry = true
-    
+
+    private var afterConnected:Void->Void?
 
 
     init(){
@@ -42,10 +44,10 @@ class WebsocketWrapper :WebSocketDelegate {
         _websocket.delegate = self;
         
     }
-    //TODO:onError
 
     func websocketDidConnect(socket: WebSocket){
         log.debug("websocket connect")
+        self.afterConnected?()
     }
     
     func websocketDidDisconnect(socket: WebSocket, error: NSError?){
@@ -61,7 +63,6 @@ class WebsocketWrapper :WebSocketDelegate {
     func websocketDidReceiveMessage(socket: WebSocket, text: String){
         if(text.size() > 3){
             log.debug("[receive=]"+text)
-
             let json = JSON(data:text.dataUsingEncoding(NSUTF8StringEncoding)!)
 
             if let uid = json["h"]["m"].string {
@@ -75,7 +76,7 @@ class WebsocketWrapper :WebSocketDelegate {
                     self._dic.removeValueForKey(uid)
                 }
             }else{
-                if let sign = json["event"].string{
+                if let sign = json["e"].string{
                     dispatch_async(WEBSOCKET_DISPATCH_QUEUE){
                         if let arrayFun = self._pubSubDic[sign] {
                             for fun in arrayFun{
@@ -99,16 +100,20 @@ class WebsocketWrapper :WebSocketDelegate {
         self.needRetry = true
         self._websocket.connect()
     }
+
+    func connect(onComplete:Void->Void){
+        afterConnected = onComplete
+        self.connect()
+    }
     
     func disConnect(){
         self.needRetry = false
         self._websocket.disconnect()
-        
     }
     
     
     private func send(text_info:String){
-        log.debug("[sender]=" + text_info)
+        log.debug("[sender=]" + text_info)
         _websocket.writeString(text_info)
     }
     private func send(json_info:JSON){
