@@ -15,6 +15,7 @@ import BrightFutures
 class WebsocketWrapper :WebSocketDelegate {
 
     typealias PubFunc = JSON->Void
+    typealias Runable = Void->Void
     
     class var shared: WebsocketWrapper {
         dispatch_once(&Inner.token) {
@@ -36,11 +37,16 @@ class WebsocketWrapper :WebSocketDelegate {
 
     private var needRetry = true
 
-    private var afterConnected:Void->Void?
+    private var afterConnected:Runable?
 
 
     init(){
         _websocket = WebSocket(url:NSURL(scheme:WSSCHEME,host:HOST,path:WSPATH)!)
+        _websocket.delegate = self;
+        
+    }
+    init(url:NSURL){
+        _websocket = WebSocket(url:url)
         _websocket.delegate = self;
         
     }
@@ -64,7 +70,6 @@ class WebsocketWrapper :WebSocketDelegate {
         if(text.size() > 3){
             log.debug("[receive=]"+text)
             let json = JSON(data:text.dataUsingEncoding(NSUTF8StringEncoding)!)
-
             if let uid = json["h"]["m"].string {
                 dispatch_async(WEBSOCKET_DISPATCH_QUEUE){
                     if let error=json["r"].dictionaryValue["e"] {
@@ -101,8 +106,8 @@ class WebsocketWrapper :WebSocketDelegate {
         self._websocket.connect()
     }
 
-    func connect(onComplete:Void->Void){
-        afterConnected = onComplete
+    func connect(onComplete:Runable){
+        self.afterConnected = onComplete
         self.connect()
     }
     
@@ -116,8 +121,8 @@ class WebsocketWrapper :WebSocketDelegate {
         log.debug("[sender=]" + text_info)
         _websocket.writeString(text_info)
     }
+
     private func send(json_info:JSON){
-       
         if let text = json_info.rawString() {
             self.send(text)
         }else{
@@ -128,7 +133,6 @@ class WebsocketWrapper :WebSocketDelegate {
     func send(jReq:JReq)->Future<JSON,WSReturnError>{
             let (uid,json) = jReq.toJSON()
             let promise = Promise<JSON,WSReturnError>()
-        
             dispatch_async(WEBSOCKET_DISPATCH_QUEUE){
                 self._dic[uid] = promise
                 self.send(json)
@@ -155,6 +159,5 @@ class WebsocketWrapper :WebSocketDelegate {
         }
     }
 
-    
 }
 

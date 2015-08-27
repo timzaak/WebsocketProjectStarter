@@ -17,7 +17,6 @@
 		2C441E651B871773005EAAA0 /* LogDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C441E5C1B871773005EAAA0 /* LogDefine.swift */; };
 		2C441E661B871773005EAAA0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C441E5E1B871773005EAAA0 /* Images.xcassets */; };
 		2C441E6C1B871C0B005EAAA0 /* StringExtend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C441E6B1B871C0B005EAAA0 /* StringExtend.swift */; };
-		2C441E6E1B8722BB005EAAA0 /* jsonPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C441E6D1B8722BB005EAAA0 /* jsonPattern.swift */; };
 		2C441E701B8895FD005EAAA0 /* WSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C441E6F1B8895FD005EAAA0 /* WSError.swift */; };
 		B1B8A0B056E451E0B0EF86D3 /* JReq.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B8A9A880F514139896D218 /* JReq.swift */; };
 		B1B8A55AAC7C46BA9EED543D /* ArrayExtend.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B8A5EFA4774FD65AE43CBB /* ArrayExtend.swift */; };
@@ -50,7 +49,6 @@
 		2C441E5C1B871773005EAAA0 /* LogDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogDefine.swift; sourceTree = "<group>"; };
 		2C441E5E1B871773005EAAA0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2C441E6B1B871C0B005EAAA0 /* StringExtend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtend.swift; sourceTree = "<group>"; };
-		2C441E6D1B8722BB005EAAA0 /* jsonPattern.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = jsonPattern.swift; sourceTree = "<group>"; };
 		2C441E6F1B8895FD005EAAA0 /* WSError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSError.swift; sourceTree = "<group>"; };
 		B1B8A02AE54032454CDA53D3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = README.md; sourceTree = "<group>"; };
 		B1B8A5EFA4774FD65AE43CBB /* ArrayExtend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtend.swift; sourceTree = "<group>"; };
@@ -210,7 +208,6 @@
 		2C441E621B871773005EAAA0 /* promise_websocket */ = {
 			isa = PBXGroup;
 			children = (
-				2C441E6D1B8722BB005EAAA0 /* jsonPattern.swift */,
 				B1B8A71541955817F597E457 /* WebsocketWrapper.swift */,
 				B1B8A9A880F514139896D218 /* JReq.swift */,
 				2C441E6F1B8895FD005EAAA0 /* WSError.swift */,
@@ -393,7 +390,6 @@
 				2C441E651B871773005EAAA0 /* LogDefine.swift in Sources */,
 				2C441E6C1B871C0B005EAAA0 /* StringExtend.swift in Sources */,
 				2C441E1E1B86EB98005EAAA0 /* AppDelegate.swift in Sources */,
-				2C441E6E1B8722BB005EAAA0 /* jsonPattern.swift in Sources */,
 				B1B8A8E34E5795C16153B76F /* WebsocketWrapper.swift in Sources */,
 				B1B8A0B056E451E0B0EF86D3 /* JReq.swift in Sources */,
 				B1B8A55AAC7C46BA9EED543D /* ArrayExtend.swift in Sources */,

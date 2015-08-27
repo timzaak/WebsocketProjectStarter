@@ -28,7 +28,7 @@ class ViewController: UIViewController {
                 log.info("abc")
             })
 
-        WebsocketWrapper.shared.send(JReq(cmd:_cmd,params:[p1,p2])).map{(json:JSON)->Void in
+        WebsocketWrapper.shared.send(JReq(_params:p1,p2)).map{(json:JSON)->Void in
             log.info("success to analyze " + json.stringValue)
             return ()
         }

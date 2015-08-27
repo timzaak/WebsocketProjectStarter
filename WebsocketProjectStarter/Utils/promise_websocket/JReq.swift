@@ -7,22 +7,22 @@ import Foundation
 import SwiftyJSON
 //{"p0":"","p1":"","p2":""}
 
-
 struct JReq {
-    let cmd:String
-    let params:Array<JSON>
+    let params:[JSON]
+    init(_params:JSON...) {
+        params = _params
+    }
     
-
     func toJSON()->(String,JSON){
-        var header = ["p0":JSON(cmd)]
+        var header = [String:JSON]()
         let paramWithIndex = params.zipWithIndex()
         for (index,v) in params.zipWithIndex() {
-            header["p"+String((index+1))]=v
+            header["p"+String(index)]=v
         }
         let mark = generateUid()
         header["m"]=JSON(mark)
         return (mark,JSON(header))
-
+        
     }
     
     private func generateUid()->String{
@@ -30,4 +30,3 @@ struct JReq {
     }
     
 }
-
